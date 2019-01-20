@@ -43,19 +43,19 @@
     <#if known>
         <#if language=="Russian">
         <div style="margin-left: 350px;">
-            Описание: ${summ.descript}
-            <br>Основные ингредиенты: ${summ.number}
+            <b>Описание:</b> ${summ.descript}
+            <br><b>Основные ингредиенты:</b> ${summ.number}
         </div>
         <#else>
      <div style="margin-left: 350px;">
-         Description: ${summ.descript}
-         <br>Main ingredients: ${summ.number}
+         <b>Description:</b> ${summ.descript}
+         <br><b>Main ingredients:</b> ${summ.number}
      </div>
         </#if>
     <#else>
         <div style="margin-left: 350px;">
-            Description: ${summ.descript}
-            <br>Main ingredients: ${summ.number}
+            <b>Description:</b> ${summ.descript}
+            <br><b>Main ingredients:</b> ${summ.number}
         </div>
     </#if>
     </div>

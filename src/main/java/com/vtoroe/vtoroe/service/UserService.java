@@ -31,7 +31,7 @@ public class UserService implements UserDetailsService {
             return false;
         }
         user.setActive(false);
-        user.setRoles(Collections.singleton(Rol.ADMIN));
+        user.setRoles(Collections.singleton(Rol.USER));
         user.setActivationCode(UUID.randomUUID().toString());
         user.setDateReg(new Date());
         user.setDateLastSeen(new Date());

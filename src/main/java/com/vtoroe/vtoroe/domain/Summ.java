@@ -1,7 +1,6 @@
 package com.vtoroe.vtoroe.domain;
 
 import javax.persistence.*;
-import javax.validation.constraints.Size;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -17,6 +16,7 @@ public class Summ implements Comparable<Summ>{
     @Column(columnDefinition = "LONGTEXT")
     private String text;
     private String DateRegistr;
+    private String dateChange;
     private String filename;
     private String imageURL;
 
@@ -138,6 +138,15 @@ public class Summ implements Comparable<Summ>{
 
     public void setNumber(String number) {
         this.number = number;
+    }
+
+    public String getDateChange() {
+        return dateChange;
+    }
+
+    public void setDateChange(Date dateChange) {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy HH-mm-ss");
+        this.dateChange =simpleDateFormat.format(dateChange);
     }
 
     public String getText() {

@@ -66,7 +66,8 @@
         <th scope="col">Описание</th>
         <th scope="col">Основной ингридиент</th>
         <th scope="col">Рейтинг</th>
-        <th scope="col">ингридиенты</th>
+        <th scope="col">Ингридиенты</th>
+        <th scope="col">Дата последнего редактирования</th>
     <#else>
             <th>
                 <button onclick="onClickBtnAllSummeries()" class="btn btn-outline-primary">All</button>
@@ -75,7 +76,8 @@
             <th scope="col">Descript</th>
             <th scope="col">Main ingredient</th>
             <th scope="col">Rating</th>
-            <th scope="col">ingredients</th>
+            <th scope="col">Ingredients</th>
+            <th scope="col">Last edited date</th>
     </#if>
         </tr>
 
@@ -108,6 +110,7 @@
                 No tags
     </#list>
     </td>
+        <td>${s.dateChange}</td>
     </tr>
     </#list>
         <script>

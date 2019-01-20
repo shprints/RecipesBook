@@ -3,7 +3,7 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <meta charset="utf-8">
 <@c.page>
-<body class="bg-light">
+<body background="../static/roles.jpg" style="background-size: 100%;">
 <div class="list-header px-3 py-3 pt-md-5 pb-md-4 mx-auto">
 
     <h1 class="display-6">
@@ -39,7 +39,8 @@
     <th scope="col">Descript</th>
     <th scope="col">Main ingredient</th>
     <th scope="col">Rating</th>
-    <th scope="col">ingredients</th>
+    <th scope="col">Ingredients</th>
+    <th scope="col">Last edited date</th>
 
 </tr>
 </thead>
@@ -63,6 +64,7 @@
                 No tags
         </#list>
         </td>
+        <td>${s.dateChange}</td>
     </tr>
     </#list>
 <script>

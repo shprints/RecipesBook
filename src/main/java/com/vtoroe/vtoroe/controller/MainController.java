@@ -85,6 +85,7 @@ public class MainController {
         Summ summ = new Summ(title, descript, number, text, imageURL);
         summ.setUser(user);
         summ.setDateRegistr(new Date());
+        summ.setDateChange(new Date());
         String[] arrayTags = tags.toLowerCase().trim().split(" ");
         List<Tags> tags1 = new ArrayList<>();
         for (int i = 0; i< arrayTags.length;i++ ){

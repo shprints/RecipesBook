@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -119,6 +120,7 @@ public class UserPageController {
         summ.setTitle(title);
         summ.setDescript(descript);
         summ.setNumber(number);
+        summ.setDateChange(new Date());
         summ.setImageURL(imageURL);
         summ.setText(text);
         summRepo.save(summ);

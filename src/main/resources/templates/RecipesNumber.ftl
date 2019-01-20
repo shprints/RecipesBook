@@ -131,25 +131,25 @@
     <div class="text-center"> <h2><u>${summ.title}</u></h2></div>
     <div style="margin-left: 350px;">
     <#if language=="Russian">
-        Описание: ${summ.descript}
-        <br>Основной ингредиент: ${summ.number}
-        <br>Ваш рейтинг:
+        <b>Описание:</b> ${summ.descript}
+        <br><b>Основной ингредиент:</b> ${summ.number}
+        <br><b>Ваш рейтинг:</b>
         <div id="rating_arr">
             <div class="stars_progress"  title="${rating}"></div><p class="progress_stars" id="p3"></p>
         </div>
-        <br>Общий рейтинг:
+        <br><b>Общий рейтинг:</b>
         <div id="rating_arr">
         <#--<div class="stars_progress"  title="${rating}"></div><p class="progress_stars" id="p3"></p>-->
             <div id="sum_stars" title="${summ.getRatings()}"></div><p id="sum_progress"></p>
         </div>
     <#else>
-        Description: ${summ.descript}
-        <br>Main ingredients: ${summ.number}
-        <br>Your rating:
+        <b>Description:</b> ${summ.descript}
+        <br><b>Main ingredients:</b> ${summ.number}
+        <br><b>Your rating:</b>
         <div id="rating_arr">
             <div class="stars_progress"  title="${rating}"></div><p class="progress_stars" id="p3"></p>
         </div>
-        <br>General rating:
+        <br><b>General rating:</b>
         <div id="rating_arr">
         <#--<div class="stars_progress"  title="${rating}"></div><p class="progress_stars" id="p3"></p>-->
             <div id="sum_stars" title="${summ.getRatings()}"></div><p id="sum_progress"></p>

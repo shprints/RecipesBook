@@ -5,15 +5,8 @@
 
 <@c.page>
 
-    <#if theme=="Fruit">
-        <body background="../static/fruitfon.jpg" style="background-size: 100%;">
-    <#else>
-        <#if theme=="Vegetables">
-            <body background="../static/vegfon.jpg" style="background-size: 100%;">
-        <#else>
-                <body class="bg-light">
-        </#if>
-    </#if>
+    <body background="../static/roles.jpg" style="background-size: 100%;">
+
 <div class="list-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
 
     <#if language=="Russian">
